@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classroom Clone</title>
+  <!-- TailwindCSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- DaisyUI -->
+  <script>
+    tailwind.config = {
+      plugins: [require('daisyui')],
+    };
+  </script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-100">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md p-4 flex justify-between items-center">
+    <div class="flex items-center gap-4">
+      <i class="fas fa-bars text-lg"></i>
+      <img src="https://via.placeholder.com/40" alt="Classroom Logo" class="rounded-full">
+      <span class="text-lg font-semibold">Classroom</span>
+    </div>
+    <div class="flex items-center gap-4">
+      <i class="fas fa-th text-lg"></i>
+      <img src="https://via.placeholder.com/40" alt="User Avatar" class="rounded-full">
+    </div>
+  </nav>
+
+  <div class="flex h-screen">
+    <!-- Sidebar -->
+    <aside class="bg-white w-64 p-4 shadow-md">
+      <div class="flex items-center gap-4 mb-6">
+        <span class="text-lg font-semibold">Menu</span>
+      </div>
+      <ul class="space-y-4">
+        <li class="flex items-center gap-4 text-blue-600">
+          <i class="fas fa-home"></i>
+          <span>หน้าแรก</span>
+        </li>
+        <li class="flex items-center gap-4 text-gray-700">
+          <i class="fas fa-calendar-alt"></i>
+          <span>ปฏิทิน</span>
+        </li>
+        <li class="flex items-center gap-4 text-gray-700">
+          <i class="fas fa-envelope"></i>
+          <span>ลงทะเบียนแล้ว</span>
+        </li>
+        <li class="flex items-center gap-4 text-gray-700">
+          <i class="fas fa-archive"></i>
+          <span>ชั้นเรียนที่เก็บ</span>
+        </li>
+        <li class="flex items-center gap-4 text-gray-700">
+          <i class="fas fa-cog"></i>
+          <span>การตั้งค่า</span>
+        </li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-6">
+       <!-- Tabs -->
+       <div class="flex border-b mb-6">
+        <button class="px-4 py-2 border-b-2 border-blue-500 text-blue-500 font-semibold">ฟอรัม</button>
+        <button class="px-4 py-2 text-gray-500">งานของชั้นเรียน</button>
+        <button class="px-4 py-2 text-gray-500">บุคคล</button>
+      </div>
+
+      <!-- Header -->
+      <div class="bg-blue-500 text-white rounded-lg p-6 shadow-md mb-6">
+        <h1 class="text-2xl font-bold">ปริญญาตรี ชั้นปีที่ 1</h1>
+        <p class="text-sm">ภัทรพล เสมอภาค</p>
+      </div>
+
+     
+      <!-- Content -->
+      <div class="grid grid-cols-12 gap-6">
+        <!-- Left Panel -->
+        <div class="col-span-4">
+          <!-- Upcoming -->
+          <div class="bg-white p-4 rounded-lg shadow-md mb-6">
+            <h2 class="text-lg font-bold mb-2">เร็วๆ นี้</h2>
+            <p class="text-sm">ครบกำหนด: วันอาทิตย์</p>
+            <p class="text-xs">15:00 - แบบฝึกหัดที่ 3 : DaisyUI</p>
+            <a href="#" class="text-blue-500 text-sm mt-2 block">ดูทั้งหมด</a>
+          </div>
+        </div>
+
+        <!-- Right Panel -->
+<div class="col-span-8">
+  <!-- Announcement Box -->
+  <div class="bg-white p-4 rounded-lg shadow-md mb-4">
+    <div class="flex items-center gap-4">
+      <img src="https://via.placeholder.com/40" alt="User Avatar" class="rounded-full">
+      <input type="text" placeholder="ประกาศบางสิ่งในชั้นเรียน" class="flex-1 border border-gray-300 rounded-lg px-4 py-2">
+    </div>
+  </div>
+  <div class="bg-white p-4 rounded-lg shadow-md mb-4">
+    <p class="text-sm">Mr. Phattarapon Samerpak โพสต์งานใหม่แล้ว: แบบฝึกหัดที่ 3 : DaisyUI</p>
+    <p class="text-xs text-gray-500">22 ธ.ค. 2024</p>
+  </div>
+</div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
